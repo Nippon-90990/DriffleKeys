@@ -21,6 +21,10 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
+                hostname: 'colorful-prize-ad2019cb60.media.strapiapp.com',
+            },
+            {
+                protocol: 'https',
                 hostname: 'stylish-gift-a7e817f55b.media.strapiapp.com',
             },
             {
