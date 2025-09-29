@@ -1,12 +1,3 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// };
-
-// export default nextConfig;
-
-
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -17,7 +8,11 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'playful-book-1c46d71b3d.media.strapiapp.com',
+                hostname: 'colorful-prize-ad2019cb60.media.strapiapp.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'colorful-prize-ad2019cb60.strapiapp.com',
             },
             {
                 protocol: 'https',
@@ -36,16 +31,15 @@ const nextConfig = {
                 hostname: 'driffle.com',
             },
             {
-                protocol: 'http',   // Use http for local development or specific vps server
-                hostname: '103.91.67.162',
+                protocol: 'http',
+                hostname: '103.91.67.162', // VPS
             },
             {
-                protocol: 'http',   // Use http for local development or specific vps server
-                hostname: 'localhost',
+                protocol: 'http',
+                hostname: 'localhost', // local dev
             },
         ],
     },
-
 };
 
 module.exports = nextConfig;
