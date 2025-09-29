@@ -94,22 +94,23 @@ export default function LiveSearch() {
                                             <Image
                                                 src={item.image.url}
                                                 alt={item.title}
-                                                height={50}
-                                                width={50}
-                                                className="w-[72px] h-[102px] object-center rounded"
+                                                height={90}
+                                                width={100}
+                                                className="object-center rounded"
+                                                // className="w-[72px] h-[102px] object-center rounded"
                                             />
 
                                             {/* Info */}
                                             <div className="flex flex-col flex-1">
-                                                <h3 className="text-s font-semibold mb-2">{item.title}</h3>
-                                                <p className="text-s text-blue-400 font-medium mb-0">GLOBAL</p>
+                                                <h3 className="text-s font-semibold ">{item.title}</h3>
+                                                <p className="text-s text-blue-400 font-medium mt-1.5">GLOBAL</p>
 
                                                 {/* Inline price block */}
-                                                <div className="flex items-center gap-2 mt-5">
+                                                <div className="flex items-center gap-2 mt-2">
                                                     <span className="text-white font-bold"> {symbol} {item.discountPrice}</span>
-                                                    <span className="text-gray-400 line-through text-xs"> {symbol} {item.originalPrice}</span>
-                                                    <span className="bg-red-600 text-xs text-white font-semibold px-2 py-0.5 rounded">
-                                                        ~{discountPercent}% off
+                                                    <span className="text-gray-400 line-through "> {symbol} {item.price}</span>
+                                                    <span className="bg-red-600 text-sm text-white font-semibold px-2 py-0.5 rounded">
+                                                        ~ {discountPercent}% off
                                                     </span>
                                                 </div>
                                             </div>

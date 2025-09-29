@@ -308,7 +308,7 @@ export default function ProductCarousel() {
                                     <h3 className="text-sm font-semibold line-clamp-2 px-3 mt-1 text-black">{item.title}</h3>
                                     <h3 className="text-lg font-semibold text-blue-600 px-3 mt-1">{item.card_region}</h3>
                                     <p className="text-lg text-gray-600 dark:text-gray-300 px-3 mt-2 mb-2">
-                                        {symbol} {item.price}
+                                        {symbol} {item.discountPrice}
                                     </p>
                                 </div>
                             </Link>) : (<div
